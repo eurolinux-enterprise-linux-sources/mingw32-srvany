@@ -8,7 +8,7 @@
 
 Name:		mingw32-srvany
 Version:	1.0
-Release:	4%{?dist}.4
+Release:	4%{?dist}.5
 Summary:	Utility for creating services for Windows
 
 Group:		Development/Libraries
@@ -51,6 +51,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc AUTHORS
 
 %changelog
+* Mon Aug 22 2011 Kai Tietz <ktietz@redhat.com>
+- Adjusted version and rebuild using gcc 4.4.6
+  Related: rhbz#722878
+
 * Mon Dec 27 2010 Andrew Beekhof <abeekhof@redhat.com> - 1.0-4.4
 - Rebuild everything with gcc-4.4
   Related: rhbz#658833
